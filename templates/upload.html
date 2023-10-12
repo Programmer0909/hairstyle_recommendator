@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="img/fav.png">
+        <meta name="author" content="CodePixar">
+        <meta name="description" content>
+        <meta name="keywords" content>
+        <meta charset="UTF-8">
+        <title>fslksdj</title>
+        <style>
+        /* Hide the default file input */
+    input[type="file"] {
+        display: none;
+    }
+    
+/* Style the label to look like a button */
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #de83f7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    
+}
+
+/* Style the file name display */
+.file-name {
+    margin-left: 10px;
+    font-weight: bold;
+    color:whitesmoke;
+}
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/linearicons.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css') }}">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <!-- <script
+        nonce="f06fdad3-0dfb-4a94-b5d1-3f07f8ff8dab">(function (w, d) { !function (a, b, c, d) { a[c] = a[c] || {}; a[c].executed = []; a.zaraz = { deferred: [], listeners: [] }; a.zaraz.q = []; a.zaraz._f = function (e) { return async function () { var f = Array.prototype.slice.call(arguments); a.zaraz.q.push({ m: e, a: f }) } }; for (const g of ["track", "set", "debug"]) a.zaraz[g] = a.zaraz._f(g); a.zaraz.init = () => { var h = b.getElementsByTagName(d)[0], i = b.createElement(d), j = b.getElementsByTagName("title")[0]; j && (a[c].t = b.getElementsByTagName("title")[0].text); a[c].x = Math.random(); a[c].w = a.screen.width; a[c].h = a.screen.height; a[c].j = a.innerHeight; a[c].e = a.innerWidth; a[c].l = a.location.href; a[c].r = b.referrer; a[c].k = a.screen.colorDepth; a[c].n = b.characterSet; a[c].o = (new Date).getTimezoneOffset(); if (a.dataLayer) for (const n of Object.entries(Object.entries(dataLayer).reduce(((o, p) => ({ ...o[1], ...p[1] })), {}))) zaraz.set(n[0], n[1], { scope: "page" }); a[c].q = []; for (; a.zaraz.q.length;) { const q = a.zaraz.q.shift(); a[c].q.push(q) } i.defer = !0; for (const r of [localStorage, sessionStorage]) Object.keys(r || {}).filter((t => t.startsWith("_zaraz_"))).forEach((s => { try { a[c]["z_" + s.slice(7)] = JSON.parse(r.getItem(s)) } catch { a[c]["z_" + s.slice(7)] = r.getItem(s) } })); i.referrerPolicy = "origin"; i.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(a[c]))); h.parentNode.insertBefore(i, h) };["complete", "interactive"].includes(b.readyState) ? zaraz.init() : a.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script> -->
+    </head>
+    <body>
+        <section class="banner-area" id="home">
+           <div class="container-fluid">
+                <div class="row justify-content-end align-items-center">
+                    <div class="col-lg-6 col-md-12 banner-left">
+                        <h1 class="text-white">
+                            HairStyle is a
+                            <br>
+                            Must try Fashion
+                            <br>
+                            for all Occasion
+                        </h1>
+                        <p class="mx-auto text-white mt-20 mb-40">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp
+                            <br>
+                            or incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim.
+                        </p>
+                        <form method="POST" enctype="multipart/form-data">
+                            <label for="file-input" class="custom-file-upload dec abcd">
+                                Take my pic
+                            </label>
+                            <input
+                                type="file"
+                                name="image"
+                                id="file-input"
+                                onchange="updateFileName(this)"
+                            >
+                            <span id="file-name" class="file-name"></span>
+                            <input type="submit" class="abcd_2" value="Tell me Haristyle??">
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-md-12 no-padding banner-right">
+                        <img class="img-fluid" src="https://preview.colorlib.com/theme/barber/img/header-img.png.webp" alt>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service-area section-gap" id="service">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="menu-content pb-70 col-lg-8">
+                        <div class="title text-center">
+                            <h1 class="mb-10">But the question is ..</h1>
+                            <p>Why do you need a good hairstyle</p>
+                            <!-- <p>Because</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="single-service col-lg-6 col-md-6 d-flex flex-row mb-30">
+                        <div class="icon">
+                            <img src="img/s1.png" alt>
+                        </div>
+                        <div class="dec">
+                            <h4>
+                                <a href="#">Enhance Your Natural Beauty</a>
+                            </h4>
+                            <p class="mt-20">
+                                <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt -->
+                            Unlock Your Hidden Charm* Choosing the right hairstyle for your face shape accentuates your best features, making you look effortlessly stunning and boosting your self-confidence
+                                <!-- ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="single-service col-lg-6 col-md-6 d-flex flex-row mb-30">
+                        <div class="icon">
+                            <img src="img/s2.png" alt>
+                        </div>
+                        <div class="dec">
+                            <h4>
+                                <a href="#">Face Shape Magic</a>
+                            </h4>
+                            <p class="mt-20">
+                                <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt -->
+                            A well-matched hairstyle can work like magic,
+reshaping your face visually. It's your secret tool to balance proportions and create a harmonious look
+                                <!-- ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="single-service col-lg-6 col-md-6 d-flex flex-row">
+                        <div class="icon">
+                            <img src="img/s3.png" alt>
+                        </div>
+                        <div class="dec">
+                            <h4>
+                                <a href="#">Age-Defying Elegance</a>
+                            </h4>
+                            <p class="mt-20">
+                                <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt -->
+                            The right haircut can take years off your appearance. Embrace timeless styles that defy aging and keep you looking youthful and vibrant
+                                <!-- ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="single-service col-lg-6 col-md-6 d-flex flex-row">
+                        <div class="icon">
+                            <img src="img/s4.png" alt>
+                        </div>
+                        <div class="dec">
+                            <h4>
+                                <a href="#">Personality Power</a>
+                            </h4>
+                            <p class="mt-20">
+                                <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt -->
+                            Your hairstyle is a canvas for self-expression. It's more than just hair; it' s a statement of your personality,confidence,and style. Choose wisely to tell your story
+                                <!-- ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-area">
+            <div class="container-fluid">
+                <div class="row no-padding">
+                    <div class="active-gallery d-flex flex-wrap">
+                        <div class="item single-gallery">
+                            <div class="thumb">
+                                <img src="{{ url_for('static', filename='archive/images/Train/Pixie/14.jpeg') }}" width="200px" height="325px">
+                                <!-- <img src="archive\images\Train\Pixie\14.jpeg" width="200px" height="325px"> -->
+                                <div class="align-items-center justify-content-center d-flex">
+                                    <h4 class="text-white">Pixie</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item single-gallery">
+                        <div class="thumb">
+                            <img src="{{ url_for('static', filename='archive/images/Train/Bangs/4.jpeg') }}" width="200px" height="325px">
+                            <!-- <img src="archive\images\Train\Bangs\4.jpeg" width="200px" height="325px"> -->
+                            <div class="align-items-center justify-content-center d-flex">
+                                <h4 class="text-white">Bangs</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item single-gallery">
+                    <div class="thumb">
+                        <img src="{{ url_for('static', filename='archive/images/Train/Asymetrical/1.jpg') }}" width="100px" height="325px">
+                        <!-- <img src="archive\images\Train\Asymetrical\1.jpg" width="100px" height="325px"> -->
+                        <div class="align-items-center justify-content-center d-flex">
+                            <h4 class="text-white">Asymmetrical</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item single-gallery">
+                <div class="thumb">
+                    <img src="{{ url_for('static', filename='archive/images/Train/Bob/6.jpg') }}" width="200px" height="325px">
+                    <!-- <img src="archive\images\Train\Bob\6.jpg" width="200px" height="325px"> -->
+                    <div class="align-items-center justify-content-center d-flex">
+                        <h4 class="tex  t-white">Bob</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="item single-gallery">
+            <div class="thumb">
+                <img src="{{ url_for('static', filename='archive/images/Train/Layered/1.jpg') }}" width="200px" height="325px">
+                <!-- <img src="archive\images\Train\Layered\1.jpg" width="200px" height="325px"> -->
+                <div class="align-items-center justify-content-center d-flex">
+                    <h4 class="text-white">Layered</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="item single-gallery">
+        <div class="thumb">
+            <img src="{{ url_for('static', filename='archive/images/Train/Curly/11.jpeg') }}" width="200px" height="325px">
+            <!-- <img src="archive\images\Train\Curly\11.jpeg" width="200px" height="325px"> -->
+            <div class="align-items-center justify-content-center d-flex">
+                <h4 class="text-white">Curly</h4>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="item single-gallery">
+    <div class="thumb">
+        <img src="{{ url_for('static', filename='archive/images/Train/Side/15.jpeg') }}" width="200px" height="325px">
+        <!-- <img src="archive\images\Train\Side\15.jpeg" width="200px" height="325px"> -->
+        <div class="align-items-center justify-content-center d-flex">
+            <h4 class="text-white">Side Cut</h4>
+        </a>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="feature-area section-gap" id="feature">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-70 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">Wondering what is your face type is 🤔..</h1>
+                    <p style="font-size: 18px;">Here we are to help 😊</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-feature flex-row hui">
+                    <div class="d-flex align-items-center">
+                        <div class="title d-flex flex-col pb-20 text-center mx-auto">
+                            <h4>Heart</h4>
+                        </div>
+                    </div>
+                    <p>
+                        Heart-shaped faces: wide forehead, narrow chin. Versatile hairstyles, from bangs to waves.
+                    </p>
+                    <div class="image-container">
+                        <img src="https://www.southernliving.com/thmb/NmpJUnFm9DTpZOyIWWIqJcI8ZgQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/lily-1-59887280850549f89738bb368942fa4c.jpg" alt="Heart Face Image" class="hidden-image">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                 <div class="single-feature flex-row hui">
+                    <div class="d-flex align-items-center">
+                        <div class="title d-flex flex-col pb-20 text-center mx-auto">
+                            <h4>Round</h4>
+                        </div>
+                    </div>
+                    <p>
+                        Full cheeks, rounded chin. Styles with volume on top elongate the face, while soft layers add definition.
+                    </p>
+                    <div class="image-container">
+                        <img src="https://www.usatoday.com/gcdn/presto/2019/04/24/USAT/b24e4a5d-aa25-40f8-922c-b265cdd3c225-AP_People_Selena_Gomez.JPG?width=660&height=447&fit=crop&format=pjpg&auto=webp" alt="Heart Face Image" class="hidden-image">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <!-- <div class="single-feature flex-row"> -->
+                <div class="single-feature flex-row hui">
+                    <div class="d-flex align-items-center">
+                        <div class="title d-flex flex-col pb-20 text-center mx-auto">
+                            <h4>Oblong</h4>
+                        </div>
+                    </div>
+                    <p>
+                        Elongated with balanced width. Go for short to medium lengths with layers to create width and avoid excessive length.
+                    </p>
+                    <div class="image-container">
+                        <img src="https://www.prettyyourworld.com/images/oblong-face.jpg" alt="Heart Face Image" class="hidden-image">
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-feature flex-row hui">
+                    <div class="d-flex align-items-center">
+                        <div class="title d-flex flex-col pb-20 text-center mx-auto">
+                            <h4>Oval</h4>
+                        </div>
+                    </div>
+                    <p>
+                        Any style works for this versatile face shape, from pixies to long waves , compliment this face type.
+                    </p>
+                    <div class="image-container">
+                        <img src="https://www.prettyyourworld.com/images/oval-face-real-woman.jpg" alt="Heart Face Image" class="hidden-image">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-feature flex-row hui">
+                    <div class="d-flex align-items-center">
+                        <div class="title d-flex flex-col pb-20 text-center mx-auto">
+                            <h4>Square</h4>
+                        </div>
+                    </div>
+                    <p>
+                        Strong jawline, equal forehead and jaw width. Soften angles with layered or wavy hairstyles.
+                    </p>
+                    <div class="image-container">
+                        <img src="https://content.latest-hairstyles.com/wp-content/uploads/collarbone-cut-with-soft-waves_.jpg" alt="Heart Face Image" class="hidden-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about-area">
+    <div class="container-fluid">
+        <div class="row no-padding justify-content-center d-flex align-items-center">
+            <div class="col-lg-6 about-left pd-6">
+                <h1>
+                    We Believe that
+                    <br>
+                    Interior beautifies the
+                    <br>
+                    Total Architecture
+                </h1>
+                <p class="mt-30">
+                    Inappropriate behavior is often laughed off as “boys will be boys,”
+                    <br>
+                    women face higher
+                        conduct standards especially in the workplace.
+                    <br>
+                    That’s why it’s crucial that, as women, our
+                        behavior on the job beyond
+                    <br>
+                    reproach. inappropriate behavior is often laughed off as
+                        “boys will
+                    <br>
+                    be boys,” women face higher conduct standards especially in the
+                    <br>
+                    workplace.
+                        That’s why it’s crucial that.
+                </p>
+                <!-- <button class="primary-btn mt-20 text-uppercase text-center">See Details</button> -->
+            </div>
+            <div class="col-lg-6 about-right no-padding">
+                <a href="https://www.youtube.com/watch?v=0O2aH4XLbto" class="play-btn">
+                    <img class="play" src="img/play.png" alt>
+                </a>
+                <img class="main img-fluid " style="border-radius: 10px;" src="https://cdn.cdnparenting.com/articles/2018/10/25111922/197861339-H.jpg" alt>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+        function updateFileName(input) {
+    const fileInput = document.getElementById('file-input');
+    const fileName = document.getElementById('file-name');
+
+    if (fileInput.files.length > 0) {
+        fileName.textContent = fileInput.files[0].name;
+    } else {
+        fileName.textContent = 'nahi';
+    }
+}
+</script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+</script>
+<script
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"
+    integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg=="
+    data-cf-beacon='{"rayId":"812355cfab4c89f0","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.8.0","si":100}'
+    crossorigin="anonymous"
+></script>
+</body>
+</html>

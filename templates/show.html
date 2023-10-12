@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show</title>
+</head>
+<body>
+    
+    {% for f_type in pred %}
+        {% if f_type == 'Heart' %} 
+            <h1>Heart</h1>
+            <br>
+            <h1>Bangs</h1>
+            {% for url in file_paths_array[1] %}
+                <img src="{{ url_for('static', filename=url.replace('\\', '/').strip()) }}" alt="nope" height="200px" width="200px">
+            {% endfor %}
+            <h1>Layered</h1>
+            {% for url in file_paths_array[6] %}
+                <img src="{{ url_for('static', filename=url.replace('\\', '/').strip()) }}" alt="nope" height="200px" width="200px">
+            {% endfor %}
+            <h1>Bob</h1>
+            {% for url in file_paths_array[3] %}
+                <img src="{{ url_for('static', filename=url.replace('\\', '/').strip()) }}" alt="nope" height="200px" width="200px">
+            {% endfor %}
+        {% elif f_type == 'Oval' %} 
+            <h1>Oval</h1>
+            <br>
+            <h1>Blunt</h1>
+            {% for url in file_paths_array[2] %}
+                <img src="{{ url_for('static', filename=url.replace('\\', '/').strip()) }}" alt="nope" height="200px" width="200px">
+            {% endfor %}
+            <h1>Bun</h1>
+            {% for url in file_paths_array[4] %}
+                <img src="{{ url_for('static', filename=url.replace('\\', '/').strip()) }}" alt="nope" height="200px" width="200px">
+            {% endfor %}
+            <h1>Pixie</h1>
+            {% for url in file_paths_array[8] %}
+                <img src="{{ url_for('static', filename=url.replace('\\', '/').strip()) }}" alt="nope" height="200px" width="200px">
+            {% endfor %}
+        {% elif f_type == 'Square' %} 
+            <h1>Square</h1>
+            <br>
+            <h1>Layered</h1>
+            {% for url in file_paths_array[6] %}
+                <img src="{{ url_for('static', filename=url.replace('\\', '/').strip()) }}" alt="nope" height="200px" width="200px">
+            {% endfor %}
+            <h1>Side</h1>
+            {% for url in file_paths_array[9] %}
+                <img src="{{ url_for('static', filename=url.replace('\\', '/').strip()) }}" alt="nope" height="200px" width="200px">
+            {% endfor %}
+            <h1>Pixie</h1>
+            {% for url in file_paths_array[8] %}
+                <img src="{{ url_for('static', filename=url.replace('\\', '/').strip()) }}" alt="nope" height="200px" width="200px">
+            {% endfor %}
+        {% elif f_type == 'Round' %} 
+            <h1>Round</h1> 
+            <br>
+            <h1>Layered</h1>
+            {% for url in file_paths_array[6] %}
+                <img src="{{ url_for('static', filename=url.replace('\\', '/').strip()) }}" alt="nope" height="200px" width="200px">
+            {% endfor %}
+            <h1>Bun</h1>
+            {% for url in file_paths_array[4] %}
+                <img src="{{ url_for('static', filename=url.replace('\\', '/').strip()) }}" alt="nope" height="200px" width="200px">
+            {% endfor %}
+            <h1>Asymetrical</h1>
+            {% for url in file_paths_array[0] %}
+                <img src="{{ url_for('static', filename=url.replace('\\', '/').strip()) }}" alt="nope" height="200px" width="200px">
+            {% endfor %}
+        {% else %} 
+            <h1>Oblong</h1>
+            <br>
+            <h1>Long</h1>
+            {% for url in file_paths_array[7] %}
+                <img src="{{ url_for('static', filename=url.replace('\\', '/').strip()) }}" alt="nope" height="200px" width="200px">
+            {% endfor %}
+            <h1>Bangs</h1>
+            {% for url in file_paths_array[1] %}
+                <img src="{{ url_for('static', filename=url.replace('\\', '/').strip()) }}" alt="nope" height="200px" width="200px">
+            {% endfor %}
+            <h1>Curly</h1>
+            {% for url in file_paths_array[5] %}
+                <img src="{{ url_for('static', filename=url.replace('\\', '/').strip()) }}" alt="nope" height="200px" width="200px">
+            {% endfor %}
+        {% endif %}
+    {% endfor %}  
+
+
+
+  
+    <button>Wanna try again<a href="http://localhost:5000"></a></button>
+</body>
+</html>
+
+
+
