@@ -6,5 +6,5 @@
 
 ![image](https://github.com/Programmer0909/hairstyle_recommendator/assets/98093062/c4d59ede-1a84-4916-8f61-92e3733fd314)
 
-
+https://github.com/Programmer0909/hairstyle_recommendator/assets/98093062/f9dd2a43-7a90-42c7-ae9f-2375a77591d1
 
